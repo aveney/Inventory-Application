@@ -8,4 +8,6 @@ import org.springframework.stereotype.Repository;
 public interface EntryRepository extends JpaRepository<Entry, Long> {
 
     public Entry findByDeviceBarcode(Long deviceBarcode);
+
+    public Entry findByRoomNumber(Long roomNumber);
 }
