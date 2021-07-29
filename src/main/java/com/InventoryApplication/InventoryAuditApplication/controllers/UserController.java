@@ -20,8 +20,16 @@ public class UserController {
     @CrossOrigin
     @PostMapping("")
     public User addUser(@RequestBody User user) {
+        user.setEntryCount(0L);
         return service.saveUser(user);
     }
+
+    @CrossOrigin
+    @PutMapping("/{id}")
+    public ResponseEntity editUser(@PathVariable Long id, @RequestBody User user) {
+        return service.updateUser(id, user);
+    }
+
     @CrossOrigin
     @GetMapping("")
     public List<User> getAllUsers() {
