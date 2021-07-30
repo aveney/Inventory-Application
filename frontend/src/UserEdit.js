@@ -50,7 +50,7 @@ class UserEdit extends Component {
 
     render() {
         const {item} = this.state;
-        const title = <h2>{'Bob'}</h2>;
+        const title = <h2>{'Edit User'}</h2>;
     
         return <div>
             <AppNavbar/>

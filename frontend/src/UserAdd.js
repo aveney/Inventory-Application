@@ -51,7 +51,7 @@ class UserAdd extends Component {
 
     render() {
         const {item} = this.state;
-        const title = <h2>{'Add Customer'}</h2>;
+        const title = <h2>{'Add User'}</h2>;
     
         return <div>
             <AppNavbar/>

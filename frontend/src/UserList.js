@@ -43,8 +43,9 @@ class UserList extends Component {
                 <td>{user.entryCount}</td>
                 <td>
                     <ButtonGroup>
-                        <Button size="sm" color="primary" tag={Link} to={"/user/" + user.id}>Edit</Button>
-                        <Button size="sm" color="danger" onClick={() => this.remove(user.id)}>Delete</Button>
+                        <Button size="sm" color="primary" tag={Link} to={"/user/" + user.id}>Edit User</Button>
+                        <Button size="sm" color="danger" onClick={() => this.remove(user.id)}>Delete User</Button>
+                        <Button size="sm" variant="info" tag={Link} to={"/entry/" + user.id}>Add Entry</Button>
                     </ButtonGroup>
                 </td>
             </tr>
@@ -57,7 +58,7 @@ class UserList extends Component {
                     <div className="float-right">
                         <Button color="success" tag={Link} to="/user/newUser">Add User</Button>
                     </div>
-                    <h3>Clients</h3>
+                    <h3>Users</h3>
                     <Table className="mt-4">
                         <thead>
                         <tr>
