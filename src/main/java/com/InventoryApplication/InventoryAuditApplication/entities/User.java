@@ -30,6 +30,11 @@ public class User {
         this.entryList = entryList;
     }
 
+    public User(String name, Long entryCount) {
+        this.name = name;
+        this.entryCount = entryCount;
+    }
+
     public User(String name) {
         this.name = name;
     }
